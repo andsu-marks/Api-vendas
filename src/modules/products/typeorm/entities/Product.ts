@@ -8,11 +8,11 @@ class Product {
   @Column()
   name: string;
 
-  @Column()
-  price: string;
+  @Column("decimal")
+  price: number;
 
-  @Column()
-  quantity: string;
+  @Column("int")
+  quantity: number;
 
   @CreateDateColumn()
   created_at: string;
